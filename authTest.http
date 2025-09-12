@@ -1,0 +1,18 @@
+post http://localhost:1984/v1/auth/register
+Content-Type: application/json
+
+{
+  "email": "someEmail@gmail.com",
+  "username": "testuser.http",
+  "password": "testpassword"
+}
+
+###
+
+post http://localhost:1984/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "someEmail@gmail.com",
+  "password": "testpassword"
+}

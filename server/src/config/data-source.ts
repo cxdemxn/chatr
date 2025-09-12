@@ -7,7 +7,7 @@ const AppDataSource = new DataSource({
   url: config.DB_URL,
   synchronize: true, // set to false in production
   logging: config.LOG_DB_QUERIES,
-  entities: [__dirname + '/../entities/*.ts'],
+  entities: [__dirname + '/../models/*.ts'],
   migrations: [],
   subscribers: [],
 });
